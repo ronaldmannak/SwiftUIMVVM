@@ -13,6 +13,16 @@
 		F844EA9727975BC500CE8013 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F844EA8527975BC500CE8013 /* ContentView.swift */; };
 		F844EA9827975BC500CE8013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F844EA8627975BC500CE8013 /* Assets.xcassets */; };
 		F844EA9927975BC500CE8013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F844EA8627975BC500CE8013 /* Assets.xcassets */; };
+		F844EAA527975DAE00CE8013 /* ObservedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F844EAA427975DAE00CE8013 /* ObservedView.swift */; };
+		F844EAA627975DAE00CE8013 /* ObservedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F844EAA427975DAE00CE8013 /* ObservedView.swift */; };
+		F844EAA827975DB300CE8013 /* StateObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F844EAA727975DB300CE8013 /* StateObjectView.swift */; };
+		F844EAA927975DB300CE8013 /* StateObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F844EAA727975DB300CE8013 /* StateObjectView.swift */; };
+		F844EAAB27975DB700CE8013 /* Tab3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F844EAAA27975DB700CE8013 /* Tab3View.swift */; };
+		F844EAAC27975DB700CE8013 /* Tab3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F844EAAA27975DB700CE8013 /* Tab3View.swift */; };
+		F844EAAE27975EC000CE8013 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = F844EAAD27975EC000CE8013 /* Client.swift */; };
+		F844EAAF27975EC000CE8013 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = F844EAAD27975EC000CE8013 /* Client.swift */; };
+		F844EAB12797813900CE8013 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F844EAB02797813900CE8013 /* EditView.swift */; };
+		F844EAB22797813900CE8013 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F844EAB02797813900CE8013 /* EditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +32,11 @@
 		F844EA8B27975BC500CE8013 /* SwiftUIMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F844EA9127975BC500CE8013 /* SwiftUIMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F844EA9327975BC500CE8013 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		F844EAA427975DAE00CE8013 /* ObservedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservedView.swift; sourceTree = "<group>"; };
+		F844EAA727975DB300CE8013 /* StateObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateObjectView.swift; sourceTree = "<group>"; };
+		F844EAAA27975DB700CE8013 /* Tab3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab3View.swift; sourceTree = "<group>"; };
+		F844EAAD27975EC000CE8013 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		F844EAB02797813900CE8013 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +69,9 @@
 		F844EA8327975BC500CE8013 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				F844EAA327975D9F00CE8013 /* Models */,
+				F844EAA227975D9C00CE8013 /* Views */,
 				F844EA8427975BC500CE8013 /* SwiftUIMVVMApp.swift */,
-				F844EA8527975BC500CE8013 /* ContentView.swift */,
 				F844EA8627975BC500CE8013 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -76,6 +92,26 @@
 				F844EA9327975BC500CE8013 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		F844EAA227975D9C00CE8013 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F844EA8527975BC500CE8013 /* ContentView.swift */,
+				F844EAB02797813900CE8013 /* EditView.swift */,
+				F844EAA427975DAE00CE8013 /* ObservedView.swift */,
+				F844EAA727975DB300CE8013 /* StateObjectView.swift */,
+				F844EAAA27975DB700CE8013 /* Tab3View.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F844EAA327975D9F00CE8013 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F844EAAD27975EC000CE8013 /* Client.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +214,11 @@
 			files = (
 				F844EA9627975BC500CE8013 /* ContentView.swift in Sources */,
 				F844EA9427975BC500CE8013 /* SwiftUIMVVMApp.swift in Sources */,
+				F844EAAE27975EC000CE8013 /* Client.swift in Sources */,
+				F844EAA827975DB300CE8013 /* StateObjectView.swift in Sources */,
+				F844EAB12797813900CE8013 /* EditView.swift in Sources */,
+				F844EAAB27975DB700CE8013 /* Tab3View.swift in Sources */,
+				F844EAA527975DAE00CE8013 /* ObservedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +228,11 @@
 			files = (
 				F844EA9727975BC500CE8013 /* ContentView.swift in Sources */,
 				F844EA9527975BC500CE8013 /* SwiftUIMVVMApp.swift in Sources */,
+				F844EAAF27975EC000CE8013 /* Client.swift in Sources */,
+				F844EAA927975DB300CE8013 /* StateObjectView.swift in Sources */,
+				F844EAB22797813900CE8013 /* EditView.swift in Sources */,
+				F844EAAC27975DB700CE8013 /* Tab3View.swift in Sources */,
+				F844EAA627975DAE00CE8013 /* ObservedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
